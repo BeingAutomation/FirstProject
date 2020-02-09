@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite1]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browser1" value="firefox1"/>
+  <test thread-count="5" name="regression(failed)" parallel="tests">
+    <classes>
+      <class name="tdd.NewTest">
+        <methods>
+          <include name="f1Method"/>
+          <include name="firstMethod"/>
+          <include name="f3Method"/>
+          <include name="L3Method"/>
+          <include name="prerReq"/>
+          <include name="f2Method"/>
+          <include name="L1Method"/>
+          <include name="secondMethod"/>
+          <include name="L2Method"/>
+          <include name="postrReq"/>
+        </methods>
+      </class> <!-- tdd.NewTest -->
+    </classes>
+  </test> <!-- regression(failed) -->
+</suite> <!-- Failed suite [suite1] -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1" parallel="tests">
+
+    <parameter name="browser" value="firefox"/>
+     <parameter name="browser1" value="firefox1"/>
+	<test name="sanity">
+		<classes>
+	<!-- 		<class name="tdd.NewTest"></class> -->
+			<class name="tdd.Test1"></class>
+		</classes>
+
+	</test>
+<!-- 	<test name="regression">
+		<classes>
+			<class name="tdd.NewTest"></class>
+			<class name="tdd.Test1"></class>
+		</classes>
+
+	</test> -->
+
+
+</suite>
+
